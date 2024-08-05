@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Exemple Entreprise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesInscription.css">
+    <link rel="icon" href="images/LOGO-Tesla.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Produits</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="inscription-section">
+        <div class="inscription-form">
+            <h2>Inscription</h2>
+            <form id="inscriptionForm" action="/submit-inscription.php" method="POST" novalidate>
+                <div class="form-group">
+                    
+                    <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                    <div id="nomError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                    <div id="prenomError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                   
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <div id="emailError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                   
+                    <input type="password" id="motDePasse" name="motDePasse" placeholder="Mot de passe" required>
+                    <div id="motDePasseError" class="error-message"></div>
+                </div>
+                <button type="submit" id="submitBtn">S'inscrire</button>
+            </form>
+            <div id="confirmationMessage" style="display:none; color: green; margin-top: 20px;">
+                Inscription réussie !
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>À propos</h4>
+                <p>Chez Tesla, nous nous efforçons de créer les meilleures voitures électriques du monde. Rejoignez-nous dans notre mission de transition vers une énergie durable.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: contact@tesla.com</p>
+                <p>Téléphone: 01 23 45 67 89</p>
+                <a href="https://github.com/011-mohamed/vetrineAppPartieFinal">GitHub</a>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="scriptsInscription.js"></script>
+</body>
+</html>

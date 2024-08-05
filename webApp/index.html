@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Tesla</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/LOGO-Tesla.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Produits</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue chez Tesla (click ici !!)</h1>
+            <p>Une introduction à votre entreprise, inspirée par Tesla.</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>À propos de Tesla</h2>
+            <p>
+                Fondée en 2003, Tesla a pour mission d'accélérer la transition mondiale vers une énergie durable. Nous concevons, fabriquons et vendons des véhicules électriques haut de gamme et des solutions énergétiques propres. Tesla est devenue synonyme d'innovation technologique et de performances exceptionnelles.
+            </p>
+            <p>
+                Notre gamme de produits inclut les voitures électriques Model S, Model 3, Model X et Model Y, ainsi que le Cybertruck et le Roadster. Chaque véhicule est conçu pour offrir une performance inégalée tout en réduisant l'impact environnemental. Nous croyons fermement que les véhicules électriques sont l'avenir du transport, offrant non seulement des avantages environnementaux, mais également une expérience de conduite supérieure.
+            </p>
+            <p>
+                En plus de nos véhicules, Tesla développe également des solutions énergétiques pour les maisons, les entreprises et les services publics. Notre gamme de produits inclut les panneaux solaires, les toits solaires et les systèmes de stockage d'énergie Powerwall, Powerpack et Megapack. Ces solutions permettent aux consommateurs et aux entreprises de produire, stocker et consommer leur propre énergie propre, contribuant ainsi à un avenir énergétique plus durable.
+            </p>
+            <p>
+                Chez Tesla, nous nous efforçons d'innover continuellement et de repousser les limites de ce qui est possible. Nous sommes déterminés à offrir des produits et des services de la plus haute qualité à nos clients, tout en travaillant à réduire notre empreinte carbone. Rejoignez-nous dans notre mission de créer un avenir plus propre et plus durable pour tous.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>À propos</h4>
+                <p>Chez Tesla, nous nous efforçons de créer les meilleures voitures électriques du monde. Rejoignez-nous dans notre mission de transition vers une énergie durable.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: contact@tesla.com</p>
+                <p>Téléphone: 01 23 45 67 89</p>
+                <a href="https://github.com/011-mohamed/vetrineAppPartieFinal">GitHub</a></li>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script>
+         
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.color = 'red';
+            });
+            link.addEventListener('mouseout', () => {
+                link.style.color = '';
+            });
+        });
+
+        
+        const heroContent = document.querySelector('.hero-content');
+        heroContent.addEventListener('click', () => {
+            const newText = document.createElement('p');
+            newText.textContent = 'Depuis notre création en 2003, Tesla s est engagée à révolutionner le secteur de l automobile et à accélérer la transition mondiale vers des énergies durables. Avec des véhicules électriques à la pointe de la technologie et des solutions énergétiques innovantes, nous redéfinissons les standards de performance et d efficacité. Découvrez comment Tesla intègre l innovation dans chaque aspect de notre entreprise pour un avenir plus propre et plus durable.';
+            newText.classList.add('new-text');
+            heroContent.appendChild(newText);
+        });
+    </script>
+</body>
+</html>
